@@ -1,5 +1,7 @@
 FROM jupyter/datascience-notebook:1386e2046833
 
+ADD *.ipynb /home/jovyan/work/
+
 USER root
 RUN apt-get update && apt-get install -y graphviz git
 
